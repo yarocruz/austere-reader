@@ -1,0 +1,25 @@
+{
+  "name": "austere-reader",
+  "version": "1.0.0",
+  "description": "Basic AF RSS Reader",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yarocruz/austere-reader.git"
+  },
+  "keywords": [
+    "rss"
+  ],
+  "author": "jaycruz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yarocruz/austere-reader/issues"
+  },
+  "homepage": "https://github.com/yarocruz/austere-reader#readme",
+  "dependencies": {
+    "axios": "^0.19.2"
+  }
+}
