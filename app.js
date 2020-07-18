@@ -1,4 +1,4 @@
-const RSS_URL = `https://codepen.io/picks/feed`;
+const RSS_URL = `https://feeds.feedblitz.com/sethsblog`;
 
 fetch(RSS_URL)
     .then(response => response.text())
@@ -16,6 +16,7 @@ fetch(RSS_URL)
                             ${el.querySelector('title').innerHTML}
                         </a>
                     </h2>
+                    <p>${el.querySelector('content').innerText}</p>
                 </article>        
                       
             
