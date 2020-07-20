@@ -6,35 +6,22 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Basic AF RSS Reader</title>
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
+    <h1>Basic AF RSS Reader</h1>
 
-    <div id="app">
-        {{ message }}
-    </div>
+    <div id="app"></div>
 
-    <div id="app-2">
-        <span v-bind:title="message">
-            Hover your mouse over me for a few seconds to see my dynamically bound title!
-        </span>
-    </div>
+    <!-- This unusual tag is a script text/template. It does not actually appear on the page as HTML. However, Vue can reference this HTML by ID and use it essentially as a template string. -->
+    <script type="text/x-template" id="app-template">
+
+    <button @click="fetchFeed">Fetch Feed</button>
+
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-    <script src="app.js"></script>
-    <script>
-        var thing = new Vue({
-            el: '#app',
-            data: {
-                message: 'Hello Vue'
-            }
-        })
 
-        var app2 = new Vue({
-            el: '#app-2',
-            data: {
-                message: 'You loaded this page on ' + new Date().toLocaleString()
-            }
-        })
-    </script>
+    <script src="app.js"></script>
 </body>
 </html>
