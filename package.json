@@ -4,6 +4,7 @@
   "description": "Basic AF RSS Reader",
   "main": "index.js",
   "scripts": {
+    "start": "http-server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,6 +21,7 @@
   },
   "homepage": "https://github.com/yarocruz/austere-reader#readme",
   "dependencies": {
-    "axios": "^0.19.2"
+    "axios": "^0.19.2",
+    "http-server": "^0.12.3"
   }
 }
