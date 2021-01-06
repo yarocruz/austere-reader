@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/yarocruz/austere-reader#readme",
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "http-server": "^0.12.3"
   }
 }
